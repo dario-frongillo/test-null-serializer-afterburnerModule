@@ -3,9 +3,12 @@ package com.example.demo;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 
 public class Person {
+
     @JsonSerialize(nullsUsing=MyNullSerializer.class)
     private String a;
+
     private String b;
+
     @JsonSerialize(nullsUsing=MyNullSerializer.class)
     private String c;
 
